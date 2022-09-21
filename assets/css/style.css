@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;	
+  scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+header{
+	font-family: 'Rubik', sans-serif;
+	color: white;
+	background-color: #8752B0;
+	height: 100vh;
+	width: 100wh;
+}
+h1.banner{	
+	padding-top: 30px;
+	font-size: 9em;
+	text-align: center;
+}
+#areaAnimacao{
+	text-align: center;
+	height: 100px;
+	overflow: hidden;
+}
+.blocoAnimado{
+	font-size: 3em;
+	line-height: 5rem;
+}
+div.blocoAnimado:first-child{
+	animation: animacaoScroll 25s 1.4s infinite normal;
+}
+@keyframes animacaoScroll{
+	0%{
+		margin-top: 0;
+	}
+	16%{
+		margin-top: -78px;
+	}
+	33%{
+		margin-top: -158px;
+	}
+	50%{
+		margin-top: -238px;
+	}
+	66%{
+		margin-top: -158px;
+	}
+	82%{
+		margin-top: -78px;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+#areaAvisos{
+	display: flex;
+	justify-content: flex-end;
+	height: 100px;
+}
+#avisoGmail{
+	visibility: hidden;
+	background-color: #3d3c38;
+	padding: 5px;
+	margin: 10px 467px;
+	border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  height: 70px;
+}
+#areaBotoes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 30px;
+}
+#areaBotoes a{
+	padding: 3px 10px;
+	border-radius: 20px;
+	font-size: 4em;
+	text-align: center;
+}
+#areaBotoes a img{
+	margin-right: 5px;
+}
+#areaBotoes a:hover{
+	box-shadow: inset 0px 0px 6px #000;
+	text-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+}
+#botaoGmail{
+  cursor: pointer;
+}
+#emailSM{
+	margin-top: 10px;
+	padding: 3px 10px;
+	border-radius: 20px;
+	background-color: #E96161;
+	display: none;
+}
+#emailSM span{
+	font-size: 2em;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 2.5em;
+}
+nav a:hover{
+	font-weight: bold;
+}
+section{
+	margin: 2.5em;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+}
+.titulo{
+	font-size: 3em;
+	font-family: 'Rubik', sans-serif;
+	margin: 0.5em;
+	transition: .7s;
+	opacity: 0;
+	transform: translate3d(-15em, 0px, 0px);
+}
+.tituloSM{
+  font-size: 2em;
+	font-family: 'Rubik', sans-serif;
+  display: none;
+}
+.animacao{
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+.caixaTitulo{
+	display: flex;
+}
+p{ 
+	font-size: 1.5em;
+	line-height: 1.7em;
+	font-family: 'Roboto', serif;
+}
+p > span{
+	font-weight: bold;
+}
+#tituloConhecimentos{
+	display: flex; 
+	gap: 20px; 
+}
+#botaoDownloadCV{
+	color: black;
+	font-size: 25px;
+	background-color: #80C5EA;
+	border-radius: 15px;
+	padding: 15px;
+}
+#botaoDownloadCV:hover{
+	box-shadow: inset 0px 0px 5px #000;
+	text-shadow: 0px 5px 4px rgba(0,0,0,0.2);
+}
+#conhecimentos{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: space-around;
+}
+.caixaConhecimentos{
+	display: flex;
+	margin-top: 3rem;
+}
+.caixaConhecimentos p{
+	color: #71688B;
+	font-weight: bold;
+}
+svg{
+	width: 400px;
+	height: 80px;
+}
+svg circle, line{
+	stroke: #71688B; 
+	stroke-width: 5;
+	fill: #C59BCF;
+}
+.lineSM{
+  display: none;
+}
+div.basico{
+	text-align: left;
+}
+div.basico circle.c1{
+	fill: #74CC93;
+}
+div.intermediario{
+	text-align: center;
+}
+div.intermediario circle.c1,
+div.intermediario circle.c2{
+	fill: #74CC93;
+}
+#areaCards{
+	display: flex; 
+	justify-content: space-evenly;
+}
+.cardProjeto{
+	margin-top: 1em;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+}
+.cardProjetoGeral{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.7s;
+	transform-style: preserve-3d;
+}
+.cardProjeto:hover .cardProjetoGeral{
+	transform: rotateY(180deg);
+}
+.cardProjetoFrente, .cardProjetoCostas{
+	background: #B6E5FF;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	border-radius: 17px;
+	text-align: center;
+}
+.cardProjetoFrente h2{
+	font-family: 'Rubik', sans-serif;
+	font-size: 2em;
+	margin: 1rem;
+	background-color: #00B6DF;
+	border-radius: 20px;
+}
+.cardProjetoFrente h3{
+	font-family: 'Roboto', serif;
+	margin: 0.7rem;
+}
+.cardProjetoFrente img{
+	border: 1px solid black;
+	width: 280px;
+}
+.cardProjetoCostas{
+	font-family: 'Roboto', serif;
+	text-align: center;
+	font-weight: bold;
+	transform: rotateY(180deg);
+}
+.cardProjetoCostas p{
+	font-size: 2em;
+	margin: 0.5em 0.5em 1.5em 0.8em;
+}
+.cardProjetoCostas a{
+	background-color: #00B6DF;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 1.5em;
+	margin: 6rem;
+	color: black;
+}
+.cardProjetoCostas a:hover{
+	box-shadow: inset 0px 0px 5px #000;
+	text-shadow: 0px 5px 4px rgba(0,0,0,0.2);
+}
+.cardEmBreve img{
+	border: none;
+	width: 200px;
+}
