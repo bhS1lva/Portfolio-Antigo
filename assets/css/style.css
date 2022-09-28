@@ -68,6 +68,7 @@ div.blocoAnimado:first-child{
 	margin-top: 3px;
 	font-size: 18px;
 	width: 200px;
+	height: auto;
 	border-radius: 15px;
 }
 #areaBotoes{
