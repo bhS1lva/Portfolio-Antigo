@@ -17,7 +17,6 @@ botao.addEventListener("mouseover", function(){
 	aviso.style.visibility = "visible";
 	botao.onclick = function(){
 		aviso.style.backgroundColor = "#11a611";
-		aviso.style.height = "30px";
 		aviso.textContent  = "E-mail copiado!";
   		navigator.clipboard.writeText('bh45237@gmail.com');
 	};
