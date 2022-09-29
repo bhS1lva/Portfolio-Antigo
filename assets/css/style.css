@@ -143,10 +143,10 @@ section{
 	transform: translate3d(-15em, 0px, 0px);
 }
 .tituloSM{
-  font-size: 2em;
+ 	font-size: 2em;
 	font-family: 'Rubik', sans-serif;
-  display: none;
-  border-bottom: 3px solid #000;
+  	display: none;
+  	border-bottom: 3px solid #000;
 }
 .animacao{
 	opacity: 1;
@@ -205,7 +205,7 @@ svg circle, line{
 	fill: #C59BCF;
 }
 .lineSM{
-  display: none;
+  	display: none;
 }
 div.basico{
 	text-align: left;
@@ -293,124 +293,124 @@ div.intermediario circle.c2{
 }
 @media(max-width: 536px){
 	#botaoGmail, nav, .caixaTitulo, svg line{
-  	display: none;
-  }
-  .tituloSM, .lineSM, #botaoDownloadCVSM{
-    display: unset;
-  }
-  h1.banner{
-    padding-top: 50px;
-    font-size: 5em;
-  }
-  #areaAnimacao{
-  	margin-top: 50px; 	
-  }
+  		display: none;
+  	}
+  	.tituloSM, .lineSM, #botaoDownloadCVSM{
+    		display: unset;
+  	}
+  	h1.banner{
+    		padding-top: 50px;
+    		font-size: 5em;
+  	}
+  	#areaAnimacao{
+  		margin-top: 30px; 	
+  	}
 	#areaBotoes{
-  	flex-direction: column;
-  	margin-top: 30px;
-  }
-  #areaBotoes a{
-  	margin-top: 10px;
-  	font-size: 2.3em;
-  }
-  #emailSM{
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-  }
-  #emailSM img{
-    margin-right: 5px;
-  }
-  section{
-  	text-align: center;
-  }
-  section p{
-    margin-top: 10px;
-  }
-  #SobreMim{
-    font-size: 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-  #SobreMim img{
-    width: 300px;
-  }
-  #conhecimentos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .caixaConhecimentos img{
-    width: 80px;
-    height: 80px;
-  }
-  svg{
-    width: 170px;
-    height: 60px;
-  }
-  svg circle{
-    cy: 40px;
-    r: 15px;
-  }
-  svg circle.c2{
-    cx: 83px;
-  }
-  svg circle.c3{
-    cx: 143px;
-  }
-  .caixaConhecimentos p{
-    margin-top: -5px;
-  }
+  		flex-direction: column;
+  		margin-top: 10px;
+  	}
+  	#areaBotoes a{
+  		margin-top: 10px;
+  		font-size: 2.3em;
+ 	}
+ 	#emailSM{
+    		display: flex;
+    		align-items: center;
+    		font-size: 12px;
+  	}
+  	#emailSM img{
+    		margin-right: 5px;
+  	}
+  	section{
+  		text-align: center;
+  	}
+  	section p{
+    		margin-top: 10px;
+  	}
+  	#SobreMim{
+    		font-size: 15px;
+    		flex-direction: column;
+    		align-items: center;
+  	}
+  	#SobreMim img{
+    		width: 300px;
+  	}
+  	#conhecimentos{
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+  	}
+  	.caixaConhecimentos img{
+    		width: 80px;
+    		height: 80px;
+  	}
+  	svg{
+    		width: 170px;
+    		height: 60px;
+  	}
+  	svg circle{
+    		cy: 40px;
+    		r: 15px;
+  	}
+  	svg circle.c2{
+    		cx: 83px;
+  	}
+  	svg circle.c3{
+    		cx: 143px;
+  	}
+	.caixaConhecimentos p{
+		margin-top: -5px;
+	}
 	.cardProjetoCostas{
 		font-size: small;
 	}
 }
 @media(min-width: 537px) and (max-width: 768px){
 	nav, .caixaTitulo, svg line, #botaoDownloadCV{
-  	display: none;
-  }
+  		display: none;
+  	}
 	.tituloSM, .lineSM, #botaoDownloadCVSM{
-    display: unset;
-  }
+    		display: unset;
+  	}
 	h1.banner{
-	 	padding-top: 10px;
-    font-size: 7em;
-  }
-  #areaAnimacao{
-  	margin: 10px; 	
-  }
-  #areaBotoes{
-  	flex-direction: column;
-  	margin-top: -1px;
-  }
-  #areaBotoes a{
-  	margin-top: 10px;
+		padding-top: 10px;
+    		font-size: 7em;
+  	}
+  	#areaAnimacao{
+  		margin: 10px; 	
+  	}
+  	#areaBotoes{
+  		flex-direction: column;
+  		margin-top: -1px;
+  	}
+  	#areaBotoes a{
+  		margin-top: 10px;
 		font-size: 3em;
-  }
-  section{
-  	text-align: center;
-  }
-  #SobreMim{
-    flex-direction: column;
-  }
+  	}
+  	section{
+  		text-align: center;
+  	}
+  	#SobreMim{
+    		flex-direction: column;
+  	}
 	.caixaConhecimentos img{
-    width: 80px;
-    height: 80px;
-  }
-  svg{
-    width: 170px;
-    height: 60px;
-  }
-  svg circle{
-    cy: 40px;
-    r: 15px;
-  }
-  svg circle.c2{
-    cx: 83px;
-  }
-  svg circle.c3{
-    cx: 143px;
-  }
+    		width: 80px;
+    		height: 80px;
+  	}
+  	svg{
+    		width: 170px;
+    		height: 60px;
+  	}
+  	svg circle{
+    		cy: 40px;
+    		r: 15px;
+  	}
+  	svg circle.c2{
+    		cx: 83px;
+  	}
+  	svg circle.c3{
+    		cx: 143px;
+  	}
 }
 @media(min-width: 769px) and (max-width: 1079px){
 	#areaBotoes a{
@@ -428,10 +428,10 @@ div.intermediario circle.c2{
 		font-size: 2em;
 	}
 	#SobreMim{
-    flex-direction: column;
+    		flex-direction: column;
 		text-align: center;
-  }
-  #conhecimentos{
+  	}
+  	#conhecimentos{
 		grid-template-columns: none;
 	}
 }
