@@ -68,7 +68,7 @@ div.blocoAnimado:first-child{
 	margin-top: 3px;
 	font-size: 18px;
 	width: 200px;
-	height: auto;
+
 	border-radius: 15px;
 }
 #areaBotoes{
@@ -82,7 +82,7 @@ div.blocoAnimado:first-child{
 #areaBotoes a{
 	display: flex;
 	align-items: center;
-	font-size: 3.4em;
+	font-size: 3.5em;
 	border-radius: 20px;
 	padding: 10px;
 }
@@ -122,6 +122,7 @@ div.blocoAnimado:first-child{
 nav{
 	display: flex;
 	flex-direction: row;
+	text-align: center;
 	justify-content: space-evenly;
 	font-size: 2.5em;
 	margin-top: 80px;
@@ -143,10 +144,10 @@ section{
 	transform: translate3d(-15em, 0px, 0px);
 }
 .tituloSM{
- 	font-size: 2em;
+	padding-bottom: 10px;
+  font-size: 3em;
 	font-family: 'Rubik', sans-serif;
-  	display: none;
-  	border-bottom: 3px solid #000;
+  display: none;
 }
 .animacao{
 	opacity: 1;
@@ -205,7 +206,7 @@ svg circle, line{
 	fill: #C59BCF;
 }
 .lineSM{
-  	display: none;
+  display: none;
 }
 div.basico{
 	text-align: left;
@@ -291,147 +292,132 @@ div.intermediario circle.c2{
 	border: none;
 	width: 200px;
 }
-@media(max-width: 536px){
-	#botaoGmail, nav, .caixaTitulo, svg line{
-  		display: none;
-  	}
-  	.tituloSM, .lineSM, #botaoDownloadCVSM{
-    		display: unset;
-  	}
-  	h1.banner{
-    		padding-top: 50px;
-    		font-size: 5em;
-  	}
-  	#areaAnimacao{
-  		margin-top: 30px; 	
-  	}
-	#areaBotoes{
-  		flex-direction: column;
-  		margin-top: 10px;
-  	}
-  	#areaBotoes a{
-  		margin-top: 10px;
-  		font-size: 2.3em;
- 	}
- 	#emailSM{
-    		display: flex;
-    		align-items: center;
-    		font-size: 12px;
-  	}
-  	#emailSM img{
-    		margin-right: 5px;
-  	}
-  	section{
-  		text-align: center;
-  	}
-  	section p{
-    		margin-top: 10px;
-  	}
-  	#SobreMim{
-    		font-size: 15px;
-    		flex-direction: column;
-    		align-items: center;
-  	}
-  	#SobreMim img{
-    		width: 300px;
-  	}
-  	#conhecimentos{
-    		display: flex;
-    		flex-direction: column;
-    		align-items: center;
-  	}
-  	.caixaConhecimentos img{
-    		width: 80px;
-    		height: 80px;
-  	}
-  	svg{
-    		width: 170px;
-    		height: 60px;
-  	}
-  	svg circle{
-    		cy: 40px;
-    		r: 15px;
-  	}
-  	svg circle.c2{
-    		cx: 83px;
-  	}
-  	svg circle.c3{
-    		cx: 143px;
-  	}
-	.caixaConhecimentos p{
-		margin-top: -5px;
-	}
-	.cardProjetoCostas{
-		font-size: small;
-	}
-}
-@media(min-width: 537px) and (max-width: 768px){
-	nav, .caixaTitulo, svg line, #botaoDownloadCV{
-  		display: none;
-  	}
-	.tituloSM, .lineSM, #botaoDownloadCVSM{
-    		display: unset;
-  	}
-	h1.banner{
-		padding-top: 10px;
-    		font-size: 7em;
-  	}
-  	#areaAnimacao{
-  		margin: 10px; 	
-  	}
-  	#areaBotoes{
-  		flex-direction: column;
-  		margin-top: -1px;
-  	}
-  	#areaBotoes a{
-  		margin-top: 10px;
+@media (max-width: 1096px){
+	#areaBotoes a{
 		font-size: 3em;
-  	}
-  	section{
-  		text-align: center;
-  	}
-  	#SobreMim{
-    		flex-direction: column;
-  	}
-	.caixaConhecimentos img{
-    		width: 80px;
-    		height: 80px;
-  	}
-  	svg{
-    		width: 170px;
-    		height: 60px;
-  	}
-  	svg circle{
-    		cy: 40px;
-    		r: 15px;
-  	}
-  	svg circle.c2{
-    		cx: 83px;
-  	}
-  	svg circle.c3{
-    		cx: 143px;
-  	}
+	}
+	#conhecimentos{
+		grid-template-columns: none;
+	}
 }
-@media(min-width: 769px) and (max-width: 1079px){
+@media (max-width: 981px){
+	#areaBotoes a{
+		font-size: 2.5em;
+	}
+}
+@media (max-width: 866px){
 	#areaBotoes a{
 		font-size: 2em;
 	}
-	#avisoGmail{
-		font-size: 1px;
-		padding: 7px;
-		margin-top: 3px;
-		font-size: 18px;
-		width: 130px;
+}
+@media (max-width: 751px){
+	h1.banner{
+		font-size: 7.5em;
 	}
 	nav{
-		text-align: center;
-		font-size: 2em;
+		display: none;
+	}
+	#areaAnimacao{
+		margin-bottom: -10px;
+	}
+	#areaBotoes{
+		flex-direction: column;
+		gap: 5px;
+	}
+	#areaBotoes a{
+		font-size: 3em;
 	}
 	#SobreMim{
-    		flex-direction: column;
+		flex-direction: column;
 		text-align: center;
-  	}
-  	#conhecimentos{
-		grid-template-columns: none;
+	}
+	#SobreMim img{
+		width: 50%;
+	}
+}
+@media (max-width: 751px){
+	.caixaTitulo{
+		display: none;
+	}
+	.tituloSM, #botaoDownloadCVSM{
+		display: unset;
+	}
+	section{
+		text-align: center;
+	}
+}
+@media (max-width: 546px){
+	h1.banner{
+		font-size: 6.5em;
+	}
+	.lineSM{
+		display: unset;
+	}
+	.caixaConhecimentos p{
+		font-size: 2em;
+	}
+	svg line{
+		display: none;
+	}
+	svg{
+    width: 170px;
+    height: 60px;
+  }
+  svg circle{
+    cy: 40px;
+    r: 15px;
+  }
+  svg circle.c2{
+    cx: 83px;
+  }
+  svg circle.c3{
+    cx: 143px;
+  }
+}
+@media (max-width: 459px){
+	h1.banner{
+		font-size: 6em;
+	}
+	#areaAnimacao{
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 425px){
+	h1.banner{
+		font-size: 5.5em;
+	}
+	#areaAnimacao{
+		margin: 40px 0px 30px 0px;
+	}
+}
+@media (max-width: 403px){
+	h1.banner{
+		font-size: 5.3em;
+	}
+	.tituloSM{
+		font-size: 2.5em;
+	}
+}
+@media (max-width: 377px){
+	h1.banner{
+		font-size: 5em;
+	}
+}
+@media (max-width: 377px){
+	h1.banner{
+		font-size: 4.5em;
+	}
+}
+@media (max-width: 345px){
+	.tituloSM{
+		font-size: 2em;
+	}
+}
+@media (max-width: 335px){
+	h1.banner{
+		font-size: 4em;
+	}
+	.caixaConhecimentos p{
+		font-size: 1.5em;
 	}
 }
