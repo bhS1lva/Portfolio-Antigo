@@ -62,13 +62,11 @@ div.blocoAnimado:first-child{
 #avisoGmail{
 	visibility: hidden;
 	position: absolute;
-	font-size: 20px;
 	background-color: #3d3c38;
 	padding: 7px;
 	margin-top: 3px;
 	font-size: 18px;
 	width: 200px;
-
 	border-radius: 15px;
 }
 #areaBotoes{
