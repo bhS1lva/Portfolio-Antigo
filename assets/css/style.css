@@ -9,15 +9,16 @@ a{
 header{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	font-family: 'Rubik', sans-serif;
 	color: #FFF;
 	background-color: #8752B0;
-	height: 100vh;
-	width: 100wh;
+	height: auto;
+	width: auto;
 }
 h1.banner{	
 	padding-top: 10px;
-	font-size: 9em;
+	font-size: 10em;
 	text-align: center;
 }
 #areaAnimacao{
@@ -62,11 +63,13 @@ div.blocoAnimado:first-child{
 #avisoGmail{
 	visibility: hidden;
 	position: absolute;
+	font-size: 20px;
 	background-color: #3d3c38;
 	padding: 7px;
 	margin-top: 3px;
 	font-size: 18px;
 	width: 200px;
+
 	border-radius: 15px;
 }
 #areaBotoes{
@@ -123,7 +126,8 @@ nav{
 	text-align: center;
 	justify-content: space-evenly;
 	font-size: 2.5em;
-	margin-top: 80px;
+	margin-top: 65px;
+	padding-bottom: 14px;
 }
 nav a:hover{
 	font-weight: bold;
@@ -297,6 +301,9 @@ div.intermediario circle.c2{
 	#conhecimentos{
 		grid-template-columns: none;
 	}
+	nav{
+		padding: 15px;
+	}
 }
 @media (max-width: 981px){
 	#areaBotoes a{
@@ -321,6 +328,7 @@ div.intermediario circle.c2{
 	#areaBotoes{
 		flex-direction: column;
 		gap: 5px;
+		padding-bottom: 15px;
 	}
 	#areaBotoes a{
 		font-size: 3em;
@@ -330,10 +338,8 @@ div.intermediario circle.c2{
 		text-align: center;
 	}
 	#SobreMim img{
-		width: 50%;
+		width: 300px;
 	}
-}
-@media (max-width: 751px){
 	.caixaTitulo{
 		display: none;
 	}
@@ -347,6 +353,9 @@ div.intermediario circle.c2{
 @media (max-width: 546px){
 	h1.banner{
 		font-size: 6.5em;
+	}
+	#areaBotoes{
+		padding-bottom: 55px;
 	}
 	.lineSM{
 		display: unset;
@@ -399,11 +408,6 @@ div.intermediario circle.c2{
 @media (max-width: 377px){
 	h1.banner{
 		font-size: 5em;
-	}
-}
-@media (max-width: 377px){
-	h1.banner{
-		font-size: 4.5em;
 	}
 }
 @media (max-width: 345px){
