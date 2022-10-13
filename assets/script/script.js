@@ -1,29 +1,62 @@
-window.location.hash = '';
-function animarScroll(){
-	const titulos = document.querySelectorAll(".titulo");
-	const windowTop = window.pageYOffset+(window.innerHeight*0.6);
-	titulos.forEach(function(elemento){
-		if(windowTop > elemento.offsetTop){
-			elemento.classList.add("animacao");
-    };
-  });
+const aviso = document.getElementById("areaAvisos");
+let contato = [...document.getElementById("contatos").getElementsByTagName("a")];
+const botaoGmail = document.getElementById("botaoGmail");
+for(let x in contato){
+	contato[x].onmouseover = () =>{
+		if(x == 0){
+			aviso.textContent = "Acesse meus repositórios.";
+		}
+		else if(x == 1){
+			aviso.textContent = "Visualize meu perfil.";
+		}
+		else if(x == 2){
+			aviso.textContent = "Envie-me uma mensagem.";
+		};
+	};
+	contato[x].onmouseout = () =>{
+		aviso.textContent = "";
+	};
 };
-window.addEventListener("scroll", function(){
-	animarScroll();	
-});
-const aviso = document.getElementById("avisoGmail");
-const botao = document.getElementById("botaoGmail");
-botao.addEventListener("mouseover", function(){
-	aviso.style.visibility = "visible";
-	botao.onclick = function(){
-		aviso.style.backgroundColor = "#11a611";
-		aviso.textContent  = "E-mail copiado!";
-  		navigator.clipboard.writeText('bh45237@gmail.com');
+botaoGmail.addEventListener("mouseover", function(){
+	aviso.textContent = "Clique para copiar o e-mail.";
+	this.onclick = () =>{
+  	navigator.clipboard.writeText('bh45237@gmail.com');
+    aviso.style.color = "#46A635";
+    aviso.style.fontWeight = "bold";
+  	aviso.textContent = "E-mail copiado!";
+	};
+	this.onmouseout = () =>{
+    aviso.style.color = "";
+    aviso.style.fontWeight = "";
+		aviso.textContent = "";
 	};
 });
-botao.addEventListener("mouseout", function(){
-	aviso.style.visibility = "";
-	aviso.style.backgroundColor = "";
-	aviso.style.height = "";
-	aviso.textContent = "Clique aqui para copiar o e-mail para a área de transferência (CTRL+V).";
-});	
+const botaoEsquerda = document.getElementById("botaoEsquerda");
+let conteudo = [...document.getElementById("areaConteudo").getElementsByTagName("section")];
+let contador = 0;
+function irParaPaginaInicial(){
+	contador = 0;
+	botaoEsquerda.style.visibility = "hidden";
+	conteudo[contador].className = "";
+	conteudo[contador+1].className = "desfoco";
+	conteudo[contador+2].className = "desfoco";
+};
+botaoEsquerda.onclick = () =>{
+	if(contador == 2){
+		conteudo[contador].className = "desfoco";
+		conteudo[contador-1].className = "";
+		contador--;
+  }else{
+		irParaPaginaInicial();
+	};
+};
+document.getElementById("botaoDireita").onclick = () =>{
+	if(contador < 2){
+		conteudo[contador].className = "desfoco";
+		conteudo[contador+1].className = "";
+    botaoEsquerda.style.visibility = "visible";
+		contador++;
+	}else{
+		irParaPaginaInicial();
+	};
+};
