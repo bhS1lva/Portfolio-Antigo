@@ -1,213 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Bruno Henrique</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/iconePortfolio.ico">
-  </head>
-  <body>
-    <header>
-      <h1 class="banner">Bruno<br>Henrique</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Bruno Henrique</title>
+  <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/iconePortfolio.ico">
+</head>
+<body>
+  <main>
+    <div id="esquerda">
+      <div id="foto">
+        <img src="./assets/img/eu.png">
+        <div>
+          <p>Olá, eu me chamo</p>
+          <h3>Bruno Henrique</h3>
+        </div>
+      </div>
       <div id="areaAnimacao">
-        <div id="p1" class="blocoAnimado">
-          Front-end
+        <div id="bordaEsquerda"></div>
+        <div id="slider">
+          <p>Front-end</p>
+          <p>Python</p>
+          <p>Back-end</p>
+          <p>UX/UI</p>
         </div>
-        <div class="blocoAnimado">
-          POO
-        </div>
-        <div class="blocoAnimado">
-          Back-end
-        </div>
-        <div class="blocoAnimado">
-          UX/UI
-        </div>
+        <div id="bordaDireita"></div>
       </div>
-      <div id="areaBotoes">
-        <a target="_blank" href="https://github.com/bhS1lva" style="background-color: #718F9F;"><img src="./assets/img/iconeGitHub.png">GitHub</a>
-        <a target="_blank" href="https://www.linkedin.com/in/bruno-henrique-902845203/" style="background-color: #0091DF;"><img src="./assets/img/iconeLinkedin.png">Linkedin</a>
-        <div id="botaoGmail">
-          <a style="background-color: #E96161;">
-            <img src="./assets/img/iconeGmail.png">
-            Gmail
-          </a>      
-          <div id="avisoGmail">
-            Clique aqui pa-a copiar o e-mail para a área de transferência (CTRL).
-          </div>
+      <div id="areaContatos">
+        <div id="contatos">
+          <a id="botaoGithub" target="_blank" href="https://github.com/bhS1lva?tab=repositories"></a>
+          <a id="botaoLinkedin" target="_blank" href="https://www.linkedin.com/in/bruno-henrique-902845203/"></a>
+          <button id="botaoGmail"></button>
+          <a id="botaoWhatsapp" target="_blank" href="https://wa.me/5511979507877"></a>
         </div>
-        <a target="_blank" href="https://wa.me/5511979507877" style="background-color: #6FB563;"><img src="./assets/img/iconeWhatsapp.png">Whatsapp</a>
+        <p id="areaAvisos">
+        </p>
       </div>
-      <nav>
-        <a href="#SobreMim">Sobre mim</a>
-        <img src="./assets/img/divisor.png">
-        <a href="#MeusConhecimentos">Meus conhecimentos</a>
-        <img src="./assets/img/divisor.png">
-        <a href="#MeusProjetos">Meus projetos</a>
-      </nav>
-    </header>
-    <main>
-      <section id="SobreMim" style="display: flex;">
-        <div>
-          <h2 class="tituloSM">Sobre mim</h2>
-          <div class="caixaTitulo">
-            <img src="./assets/img/bordaTitulo.png"><h2 class="titulo">Sobre mim</h2>
-          </div>
-          <p>Olá, meu nome é <span>Bruno Henrique</span>. Tenho 18 anos. Sou formado em <span>Técnico em Redes</span> pelo <span>Senai</span> mas foi em <span>Desenvolvimento</span> que eu encontrei a minha vocação.</p><br>
-          <p>Atualmente estou no 2º semestre para ser <span>tecnólogo</span> em <span>Análise e Desenvolvimento de 
-          Sistemas</span> pela faculdade <span>FIAP</span>.</p><br>
-          <p>Além disso já fiz e ainda faço <span>cursos extracurriculares</span> em plataformas, como: <span>Fundação Estudar, Udemy e Alura</span>.</p>
-        </div>
-        <div>
-          <img style="margin-top: 3rem;" src="./assets/img/imagemSobreMim.png">
-        </div>
-      </section>
-      <section id="MeusConhecimentos">
-        <h2 class="tituloSM">Meus conhecimentos</h2>
-        <div class="caixaTitulo">
-          <img src="./assets/img/bordaTitulo.png"><h2 id="tituloConhecimentos" class="titulo">Meus conhecimentos<a id="botaoDownloadCV" href="./assets/Bruno Henrique.pdf" download>Download CV<img src="./assets/img/iconeDownload.png"></a></h2>
-        </div>
-        <p>Constantemente estudo e realizo projetos para aprimorar meus conhecimentos nas áreas.</p>
-        <div id="conhecimentos">
-          <div class="caixaConhecimentos">
-            <img src="./assets/img/iconeHTML.png">
-            <div id="vetor" class="intermediario">
-              <svg>
-                <circle cx="23" cy="50" r="20" class="c1"/>
-                <line x1="40" y1="40" x2="150" y2="40" class="lineSM"/>
-                <line x1="45" y1="50" x2="200" y2="50" class="l1"/>
-                <circle cx="200" cy="50" r="20" class="c2"/>
-                <line x1="222" y1="50" x2="353" y2="50" class="l2"/>
-                <circle cx="375" cy="50" r="20" class="c3"/>
-              </svg>
-              <p>Intermediário</p>
+    </div>
+    <div id="direita">
+      <div id="botoes">
+        <button id="botaoEsquerda">
+          <img src="./assets/img/setaEsquerda.png">
+        </button>
+        <button id="botaoDireita">
+          <img src="./assets/img/setaDireita.png">
+        </button>
+      </div>
+      <div id="areaConteudo">
+        <section> 
+          <h1>Sobre mim</h1>
+          <p>Tenho <strong>19 anos</strong>. Sou formado em <strong>Técnico em Redes</strong> pelo <strong>SENAI</strong> mas foi em <strong>desenvolvimento</strong> que eu encontrei a minha vocação.</p>
+          <p>Atualmente estou no <strong>2º semestre</strong> para ser <strong>tecnólogo</strong> em <strong>Análise e Desenvolvimento de Sistemas</strong> pela faculdade <strong>FIAP</strong>.</p>
+          <p>Além disso já fiz e ainda faço <strong>cursos extracurriculares</strong> em plataformas, como: <strong>Fundação Estudar</strong>, <strong>Udemy</strong> e <strong>Alura</strong>.</p>
+          <p id="saibaMais"><strong>Saiba mais em:</strong></p>
+          <a target="_blank" href="./assets/BrunoHenrique.pdf" download="Currículo - Bruno Henrique">
+            <img src="./assets/img/iconeDownloadCV.png">
+            Download currículo
+          </a>
+        </section>
+        <section class="desfoco">
+          <h1>Meus conhecimentos</h1>
+          <p>Constantemente estudo e realizo projetos para aprimorar meus conhecimentos nas áreas.</p>
+          <div id="caixaConhecimentos">
+            <div class="conhecimento intermediario">
+              <img src="./assets/img/iconeHTML.png">
+              <div>
+                <svg>
+                  <line x1="3" y1="37" x2="244" y2="37" class="linePadrao"></line>
+                  <line x1="8" y1="37" x2="385" y2="37" class="lineSM"></line>
+                  <circle class="c1"></circle>
+                  <circle class="c2"></circle>
+                  <circle class="c3"></circle>
+                </svg>
+                <p>Intermediário</p>
+              </div>
             </div>
-          </div>
-          <div class="caixaConhecimentos">
-            <img src="./assets/img/iconeCSS.png">
-            <div class="intermediario">
-              <svg>
-                <circle cx="23" cy="50" r="20" class="c1"/>
-                <line x1="40" y1="40" x2="150" y2="40" class="lineSM"/>
-                <line x1="45" y1="50" x2="200" y2="50" class="l1"/>
-                <circle cx="200" cy="50" r="20" class="c2"/>
-                <line x1="222" y1="50" x2="353" y2="50" class="l2"/>
-                <circle cx="375" cy="50" r="20" class="c3"/>
-              </svg>
-              <p>Intermediário</p>
+            <div class="conhecimento intermediario">
+              <img src="./assets/img/iconeCSS.png">
+              <div>
+                <svg>
+                  <line x1="3" y1="37" x2="244" y2="37" class="linePadrao"></line>
+                  <line x1="8" y1="37" x2="385" y2="37" class="lineSM"></line>
+                  <circle class="c1"></circle>
+                  <circle class="c2"></circle>
+                  <circle class="c3"></circle>
+                </svg>
+                <p>Intermediário</p>
+              </div>
             </div>
-          </div>
-          <div class="caixaConhecimentos">
-            <img src="./assets/img/iconeJavascript.png">
-            <div class="basico">
-              <svg>
-                <circle cx="23" cy="50" r="20" class="c1"/>
-                <line x1="40" y1="40" x2="150" y2="40" class="lineSM"/>
-                <line x1="45" y1="50" x2="200" y2="50" class="l1"/>
-                <circle cx="200" cy="50" r="20" class="c2"/>
-                <line x1="222" y1="50" x2="353" y2="50" class="l2"/>
-                <circle cx="375" cy="50" r="20" class="c3"/>
-              </svg>
-              <p>Básico</p>
+            <div class="conhecimento intermediario">
+              <img src="./assets/img/iconeJavascript.png">
+              <div>
+                <svg>
+                  <line x1="3" y1="37" x2="244" y2="37" class="linePadrao"></line>
+                  <line x1="8" y1="37" x2="385" y2="37" class="lineSM"></line>
+                  <circle class="c1"></circle>
+                  <circle class="c2"></circle>
+                  <circle class="c3"></circle>
+                </svg>
+                <p>Intermediário</p>
+              </div>
             </div>
-          </div>
-          <div class="caixaConhecimentos">
-            <img src="./assets/img/iconeFigma.png">
-            <div class="intermediario">
-              <svg>
-                <circle cx="23" cy="50" r="20" class="c1"/>
-                <line x1="40" y1="40" x2="150" y2="40" class="lineSM"/>
-                <line x1="45" y1="50" x2="200" y2="50" class="l1"/>
-                <circle cx="200" cy="50" r="20" class="c2"/>
-                <line x1="222" y1="50" x2="353" y2="50" class="l2"/>
-                <circle cx="375" cy="50" r="20" class="c3"/>
-              </svg>
-              <p>Intermediário</p>
+            <div class="conhecimento intermediario">
+              <img src="./assets/img/iconeFigma.png">
+              <div>
+                <svg>
+                  <line x1="3" y1="37" x2="244" y2="37" class="linePadrao"></line>
+                  <line x1="8" y1="37" x2="385" y2="37" class="lineSM"></line>
+                  <circle class="c1"></circle>
+                  <circle class="c2"></circle>
+                  <circle class="c3"></circle>
+                </svg>
+                <p>Intermediário</p>
+              </div>
             </div>
-          </div>
-          <div class="caixaConhecimentos">
-            <img src="./assets/img/iconePython.png">
-            <div class="intermediario">
-              <svg>
-                <circle cx="23" cy="50" r="20" class="c1"/>
-                <line x1="40" y1="40" x2="150" y2="40" class="lineSM"/>
-                <line x1="45" y1="50" x2="200" y2="50" class="l1"/>
-                <circle cx="200" cy="50" r="20" class="c2"/>
-                <line x1="222" y1="50" x2="353" y2="50" class="l2"/>
-                <circle cx="375" cy="50" r="20" class="c3"/>
-              </svg>
-              <p>Intermediário</p>
+            <div class="conhecimento">
+              <img src="./assets/img/iconePython.png">
+              <div>
+                <svg>
+                  <line x1="3" y1="37" x2="244" y2="37" class="linePadrao"></line>
+                  <line x1="8" y1="37" x2="385" y2="37" class="lineSM"></line>
+                  <circle class="c1"></circle>
+                  <circle class="c2"></circle>
+                  <circle class="c3"></circle>
+                </svg>
+                <p>Básico</p>
+              </div>
             </div>
-          </div>
-          <div class="caixaConhecimentos">
-            <img src="./assets/img/iconeLinux.png">
-            <div class="basico">
-              <svg>
-                <circle cx="23" cy="50" r="20" class="c1"/>
-                <line x1="40" y1="40" x2="150" y2="40" class="lineSM"/>
-                <line x1="45" y1="50" x2="200" y2="50" class="l1"/>
-                <circle cx="200" cy="50" r="20" class="c2"/>
-                <line x1="222" y1="50" x2="353" y2="50" class="l2"/>
-                <circle cx="375" cy="50" r="20" class="c3"/>
-              </svg>
-              <p>Básico</p>
+            <div class="conhecimento">
+              <img src="./assets/img/iconeLinux.png">
+              <div>
+                <svg>
+                  <line x1="3" y1="37" x2="244" y2="37" class="linePadrao"></line>
+                  <line x1="8" y1="37" x2="385" y2="37" class="lineSM"></line>
+                  <circle class="c1"></circle>
+                  <circle class="c2"></circle>
+                  <circle class="c3"></circle>
+                </svg>
+                <p>Básico</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div id="botaoDownloadCVSM">
-          <div>
-            <p>Para mais informações faça o download:</p><br>
-            <a href="./assets/Bruno Henrique.pdf" download>Currículo</a>
-          </div>
-        </div>
-      </section>
-      <section id="MeusProjetos" style="border: none;">
-        <h2 class="tituloSM">Meus projetos</h2>
-        <div class="caixaTitulo">
-          <img src="./assets/img/bordaTitulo.png"><h2 class="titulo">Meus projetos</h2>
-        </div>
-        <div id="areaCards">
-          <div class="cardProjeto">
-            <div class="cardProjetoGeral">
-              <div class="cardProjetoFrente">
+          </div>    
+          </section>
+          <section class="desfoco">
+            <h1>Meus projetos</h1>
+            <div id="areaProjetos">
+              <a class="projeto" target="_blank" href="https://bhs1lva.github.io/Projeto-Cadastro-Nutricionista/">
                 <h2>Projeto 1</h2>
-                <img src="./assets/img/printP2.png">
-                <h3>Site para cadastro de pacientes de nutricionista.</h3>
-              </div>
-              <div class="cardProjetoCostas">
-                <p>Cadastro de pacientes e cálculo do IMC.</p>
-                <a target="_blank" href="https://bhs1lva.github.io/Projeto-Cadastro-Nutricionista/">Acesse</a>
-              </div>
-            </div>
-          </div>
-          <div class="cardProjeto">
-            <div class="cardProjetoGeral">
-              <div class="cardProjetoFrente">
+                <img src="./assets/img/printP1.png">
+                <p>Site para cadastro de pacientes de nutricionista.</p>
+              </a>
+              <a class="projeto" target="_blank" href="https://bhs1lva.github.io/Projeto-Portal-de-Noticias/">
                 <h2>Projeto 2</h2>
-                <img src="./assets/img/printP3.png">
-                <h3>Portal de notícias sobre a cidade de São Paulo.</h3>
-              </div>
-              <div class="cardProjetoCostas">
+                <img src="./assets/img/printP2.png">
                 <p>Portal de notícias sobre a cidade de São Paulo.</p>
-                <a target="_blank" href="https://bhs1lva.github.io/Projeto-Portal-de-Noticias/">Acesse</a>
-              </div>
-            </div>
-          </div>
-          <div class="cardProjeto">
-            <div class="cardProjetoGeral">
-              <div class="cardProjetoFrente cardEmBreve">
+              </a>
+              <div class="projeto emBreve">
                 <h2>Em breve</h2>
-                <img src="./assets/img/emDesenvolvimento.png">
+                <img src="./assets/img/emConstrucao.png">
+                <p>Mais projetos em breve.</p>
               </div>
-              <div class="cardProjetoCostas">
-                <p>Novos projetos em breve.</p>
+              <div class="projeto emBreve">
+                <h2>Em breve</h2>
+                <img src="./assets/img/emConstrucao.png">
+                <p>Mais projetos em breve.</p>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
-    </main>
-  </body>
-  <script type="text/javascript" src="./assets/script/script.js"></script>
+    </div>
+  </main>
+</body>
+<script type="text/javascript" src="./assets/script/script.js"></script>
 </html>
