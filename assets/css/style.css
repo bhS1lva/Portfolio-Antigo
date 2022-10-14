@@ -329,7 +329,7 @@ circle{
 	transform: scale(0.9);
 }
 .projeto h2{
-	font-size: 2.3em;
+	font-size: 1.2em;
 	background-color: #47BFFF;
 	border-radius: 10px;
 	padding: 5px 20px;
@@ -352,15 +352,15 @@ circle{
 	transform: rotate(15deg);
 }
 @media(max-width: 1300px){
-  section{
-    width: 650px;
-  }
-  section > p{
-    margin-top: 0px;
-  }
+	section{
+    		width: 650px;
+  	}
+  	section > p{
+   		margin-top: 0px;
+  	}
 }
 @media(max-width: 1200px){
-  section{
+  	section{
 		width: 600px;
 	}
 	section > p{
@@ -372,11 +372,11 @@ circle{
 	.projeto img{
 		width: 200px;
 	}
-  #caixaConhecimentos{
+  	#caixaConhecimentos{
 		grid-template-columns: repeat(1, auto);
 		overflow-y: scroll;
 	}
-  .conhecimento img{
+ 	.conhecimento img{
 		width: 120px;
 		height: 120px;
 	}
@@ -424,11 +424,11 @@ circle{
 	svg{
 		width: 300px;
 	}
-	.c2 {
-    	cx: 150;
+	.c2{
+    		cx: 150;
 	}
-	.c3 {
-    	cx: 265;
+	.c3{
+    		cx: 265;
 	}
 	.lineSM{
 		display: none;
@@ -438,7 +438,7 @@ circle{
 	}
 	.projeto{
 		width: 400px;
-    margin-bottom: 10px;
+   		margin-bottom: 10px;
 	}
 	.projeto img{
 		width: 250px;
@@ -455,8 +455,8 @@ circle{
 		width: inherit;
 	}
   	#areaAvisos{
-    	bottom: 2200px;
-    	top: 560px;
+    		bottom: 2200px;
+    		top: 560px;
   	}
 	#botoes{
 		display: none;
@@ -559,10 +559,10 @@ circle{
 		width: 300px;
 	}
 	.c2 {
-    	cx: 150;
+    		cx: 150;
 	}
 	.c3 {
-    	cx: 265;
+    		cx: 265;
 	}
 	.lineSM{
 		display: none;
@@ -610,14 +610,14 @@ circle{
 	}
 }
 @media(max-width: 375px){
-  section > h1{
-    font-size: 2.5em;
-  }
-  section > a{
-    width: 300px;
-  }
-  .conhecimento img{
-    width: 75px;
-    height: 75px;
-  }
+	section > h1{
+		font-size: 2.5em;
+	}
+	section > a{
+		width: 300px;
+	}
+	.conhecimento img{
+		width: 75px;
+		height: 75px;
+	}
 }
