@@ -60,3 +60,11 @@ document.getElementById("botaoDireita").onclick = () =>{
 		irParaPaginaInicial();
 	};
 };
+addEventListener('keydown', (event) => {
+	const keyPressed = event.key;
+	if(keyPressed == "ArrowRight"){
+    		botaoDireita.click();
+  	}
+  	else if(contador != 0 && keyPressed == "ArrowLeft")
+    		botaoEsquerda.click();
+});
