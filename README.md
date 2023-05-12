@@ -7,4 +7,4 @@ Tecnologias usadas nesse projeto: 🟧 HTML 🟦 CSS 🟨 JavaScript.
 
 ### 🔗 Visualize o repositório do novo portfólio: <a href="https://github.com/bhS1lva/Portfolio">Novo portfólio</a> 
 
-### 🔗 Acesse o portfólio antigo: <a href="https://bhs1lva.github.io/Portfolio/">Portfólio - Bruno Henrique</a> 
+### 🔗 Acesse o portfólio antigo: <a href="https://bhs1lva.github.io/Portfolio-Antigo/">Portfólio - Bruno Henrique</a> 
