@@ -1,5 +1,5 @@
 
-<img width="200" src="https://github.com/bhS1lva/Portfolio-Antigo/assets/101880543/ef65f88a-e484-4c87-803f-5c609939112d"></img>
+![badge encerrado](https://github.com/bhS1lva/Portfolio-Antigo/assets/101880543/870b03ee-e6fb-4df0-bf19-45c710bab6db)
 
 # ⚠ Esse é o repositório do portfólio antigo
 
